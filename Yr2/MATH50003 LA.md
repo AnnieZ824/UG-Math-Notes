@@ -168,3 +168,12 @@ Direct sum of subspaces
    3. Cor 6.3 (converse matrix form): $A\in M_{n\times n}(\mathcal{F})$ factorises in linear factors, then $A$ is similar to an upper-triangular matrix.
       1. Proof: let $V = F^n$ and apply Thm 6.2 to the linear map given by $T(v) = Av$.
       2. Algorithm to triangularise: find eigenvector $w_1, W + w_1, \cdots$ of $T, W + w_1, \cdots$ until obtain $B=\{w_1, \cdots, w_n\}$, then $[T]_B$ is upper-triangular. (particularly, find $P$ s.t. $A = P T P^{-1}$ is upper-triangular)
+
+### Lec 16/10/26
+Cayley-Hamilton
+1. Def: char poly of transformations/matrix, $p(T) = \sum a_i T^i$
+2. Thm: $A\in M_{n\times n}(F), p_A(A) =0$
+   1. Proof
+      1. diagonal matrix
+      2. triangularisable over $\mathbb{C}$
+      3. Other: strong induction, discussed by invariant subspace

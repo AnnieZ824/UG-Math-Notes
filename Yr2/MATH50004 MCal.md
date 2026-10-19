@@ -40,7 +40,8 @@ Lec 3 08/10/26
    1. $\mathbf{A}$ is a vector function of position with continuous partial derivatives (vector field)
    2. Divergence(scalar): $\div \mathbf{A} = \nabla \cdot \mathbf{A}=\frac{\delta A_1}{\delta x} + ...$
       1. div=0: solenoidal
-   3. Culr(vector): $\curl \mathbf{A} = \nabla \times \mathbf{A}$
+   3. Curl(vector): $\curl \mathbf{A} = \nabla \times \mathbf{A}$
       1. zero curl: irrotational
       2. related to rotation: global/microscopic
    4. N.B. not commute, $A_1\frac{\delta}{\delta x}\neq \frac{\delta A_1}{\delta x}$ which is a scalar operator
+

@@ -56,14 +56,19 @@ Euclidean spaces ($\mathbb{R}^n$)
 1. Continuity: derived immediately from $\mathbb{R}$ to Euclidean space
 2. Derivative (more geometric)
    1. Def
-      1. let $\Omega$ be an open set in $\mathbb{R}^n, f: \Omega \to \mathbb{R}^m$ is differentiable if $\exists a linear map $\Lambda \in L(\mathbb{R}^n, \mathbb{R}^m)$ s.t.
+      1. let $\Omega$ be an open set in $\mathbb{R}^n, f: \Omega \to \mathbb{R}^m$ is differentiable if $\exists$ a linear map $\Lambda \in L(\mathbb{R}^n, \mathbb{R}^m)$ s.t.
       $$ \lim_{x\to p} \frac{||f(x)- f(p) - \Lambda (x-p)||}{||x-p||} = 0, Df(p):= \Lambda, \mathbb{R}^n \to \mathbb{R}$$
       2. ! $f$ differentiable at $p \nRightarrow \lim_{x\to p} \frac{f(x)-f(p)}{||x-p||}$ exists, since the direction of derivative is not considered (e.g. $x$ at $x=0$).
       3. Rmk: $Df$ also called the differential of $f$ at $p$; apply linear map: $\Lambda[p]$, otherwise $Df(p)$
-      4. $\iff \exists \Lambda s.t. \lim_{h\to 0} \frac{||f(p+h)-f(p)-\Lambda[h]}{||h||}$
+      4. $\iff \exists \Lambda s.t. \lim_{h\to 0} \frac{||f(p+h)-f(p)-\Lambda[h]||}{||h||}$
    2. Let $m\geq 1$ and $f_1, \cdots, f_m: (a,b)\to \mathbb{R}$, then $f(x) = (f_1, \cdots, f_m)$ is differentiable at $p$ as soon as $f_i$ are differentiable at $p$, and $Df(p) = (f_1'(p), \cdots, f_m'(p))$
    3. Thm 1.33: if derivative exists, then it is unique.
    
 #####
 
-### Lec 4 
+### Lec 4 16/10/26
+
+1. Chain rule
+   1. $g: (a,b)\to (c, d)$ differentiable at $(a,b), f: (c,d)\to \mathbb{R}$ differentiable at $(g(p))$, then $f\circ g: (a,b)\to \mathbb{R}$ is diferrentiable at $p$,
+      \[ (f\circ g)'(p) = Df(g(p))Dg(p) \]
+   2. Proof: replace by linear approximation at both $g,f$
